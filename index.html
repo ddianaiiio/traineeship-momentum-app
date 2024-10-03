@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Momentum</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/app.js" defer></script>
+</head>
+<body>
+	<div class="container">
+
+		<div class="section header">
+				
+			<button id="open-popup" class="button button--top">tasks</button>
+
+			<div class="popup popup--tasks">
+
+				<div class="close-btn">&times;</div>
+				<h1>Tasks</h1>
+				<input type="text" id="new-task-input" class="new-task-input" placeholder="new task" maxlength="50" autocomplete="off">
+				<p class="error-message">Task cannot be empty!</p>
+				<ul id="task-list" class="task-list"></ul>
+				<button id="delete-completed-tasks" class="button button--delete">delete completed tasks</button>
+			</div>
+				
+
+			<div class="weather-widget">
+				<input type="text" id="city-input" class="city-input" placeholder="your city" maxlength="20" autocomplete="off">
+				<div class="city"></div>
+				<div class="temperature"></div>
+				<div class="weather-description"></div>
+				<div class="error-message">Город не найден</div> 
+			</div>
+				
+		</div>
+		
+		<div class="section main">
+
+			<div class="time-widget">
+				<div class="time"></div>
+				<div class="date"></div>
+			</div>
+
+		</div>
+
+		<div class="section footer">
+			
+			<ul>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Info</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+
+		</div>
+
+	</div>
+</body>
+</html>
